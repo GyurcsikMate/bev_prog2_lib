@@ -11,7 +11,7 @@ using namespace genv;
 Gorgi::Gorgi(Application *parent,int x, int y, int sx, int sy,string sztring):Widget(parent,x, y, sx, sy,sztring)
 {
  ertek=0;
-_parent->registerWidget(this);
+
 }
 
 

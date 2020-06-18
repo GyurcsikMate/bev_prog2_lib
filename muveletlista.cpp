@@ -10,7 +10,7 @@ using namespace genv;
 
 Lista::Lista(Application *parent,int x, int y, int sx, int sy,string sztring):Widget(parent,x, y, sx, sy,sztring)
 {
-_parent->registerWidget(this);
+
 vector<string>osszes={"plus","minus","multiply","divide","power"};
 }
 

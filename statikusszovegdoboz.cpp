@@ -10,7 +10,7 @@ using namespace genv;
 
 Szovi::Szovi(Application *parent,int x, int y, int sx, int sy,string sztring):Widget(parent,x, y, sx, sy,sztring)
 {
-_parent->registerWidget(this);
+
 }
 
 void Szovi::beolvaso(string fajl)
