@@ -1,27 +1,24 @@
-#include "statikusszovegdoboz.hpp"
+
+#include "dinamo.hpp"
+
 using namespace std;
 using namespace genv;
 
-Szovi::Szovi(int x, int y, int sx, int sy,string sztring):Widget(x, y, sx, sy,sztring)
+Dinamik::Dinamik(int x, int y, int sx, int sy,string sztring):Widget(x, y, sx, sy,sztring)
 {
 //_parent->registerWidget(this);
+kie=false;
 }
 
-void Szovi::beolvaso(string fajl)
+void Dinamik::beolvaso(string fajl)
 {
-    ifstream bemenet(fajl);
+
     string sor;
+    string szo; //nem mukodik aaaaaaaaaaaaaaaaaaaaaaaa!
 
-    while(bemenet.good())
+    if(gout.twidth(sor+' ')<= _size_x)
     {
-
-
-    string szo;
-
-    bemenet>>szo;
-    if(gout.twidth(sor+' '+szo)<= _size_x)
-    {
-        sor+=szo+' ';
+        //sor+=ev.keycode; // ezt majd az appba
     }
     else if(gout.twidth(sor+' '+szo)> _size_x)
     {
@@ -29,11 +26,11 @@ void Szovi::beolvaso(string fajl)
         sor=szo+' ';
     }
 }
-osszes.push_back(sor);
-}
+//osszes.push_back(sor);
 
 
-void Szovi::draw()
+
+void Dinamik::draw()
 {
     gout<<move_to(_x,_y)<<color(250,250,250)<<box(_size_x,_size_y);
     for(int i=0;i<=osszes.size();i++)
@@ -42,22 +39,23 @@ void Szovi::draw()
 
     }
 }
-    void Szovi::handle(int oldal)
+    void Dinamik::handle(int oldal)
     {
         oldal++;
     }
-    int Szovi::xkereso()
+    int Dinamik::xkereso()
     {
 
         return _x;
     }
-    int Szovi::ykereso()
+    int Dinamik::ykereso()
     {
 
         return _y;
     }
-    string Szovi::kiekereso()
+    string Dinamik::kiekereso()
     {
-        return "sajt";
+
+        return "sanyo";
     }
 

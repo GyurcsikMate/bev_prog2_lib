@@ -1,20 +1,21 @@
 #ifndef GORGOS_HPP_INCLUDED
 #define GORGOS_HPP_INCLUDED
-#include "alkalkm.hpp"
+//#include "alkalkm.hpp"
+//#include "graphics.hpp"
 #include "widgetss.hpp"
-#include "graphics.hpp"
-#include <string>
-#include <fstream>
-#include <vector>
+
+//#include <string>
+//#include <fstream>
+//#include <vector>
 using namespace std;
 
 class Gorgi:public Widget
 {
-    protected:
+protected:
     int ertek;
 
 public:
-    Gorgi(Application *,int , int, int , int ,string );
+    Gorgi(int , int, int , int ,string );
     void draw();
     void handle(int oldal);
     int xkereso();

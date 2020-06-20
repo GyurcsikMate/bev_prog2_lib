@@ -1,15 +1,16 @@
-#ifndef STATIKUSSZOVEGDOBOZ_HPP_INCLUDED
-#define STATIKUSSZOVEGDOBOZ_HPP_INCLUDED
+#ifndef DINAMO_HPP_INCLUDED
+#define DINAMO_HPP_INCLUDED
 #include "widgetss.hpp"
 
 using namespace std;
 
-class Szovi:public Widget
+class Dinamik:public Widget
 {
     protected:
     vector<string>osszes;
+    bool kie;
 public:
-    Szovi(int , int, int , int ,string );
+    Dinamik(int , int, int , int ,string );
     void draw();
     void handle(int oldal);
     int xkereso();
@@ -19,5 +20,4 @@ public:
 
 };
 
-
-#endif // STATIKUSSZOVEGDOBOZ_HPP_INCLUDED
+#endif // DINAMO_HPP_INCLUDED

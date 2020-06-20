@@ -1,17 +1,17 @@
-#include "alkalkm.hpp"
-#include "widgetss.hpp"
-#include "graphics.hpp"
+//#include "alkalkm.hpp"
+//#include "widgetss.hpp"
+//#include "graphics.hpp"
 #include "gorgos.hpp"
-#include <string>
-#include <fstream>
-#include <vector>
+//#include <string>
+//#include <fstream>
+//#include <vector>
 using namespace std;
 using namespace genv;
 ///Fontos!! y kereso az erteket adja vissza
-Gorgi::Gorgi(Application *parent,int x, int y, int sx, int sy,string sztring):Widget(parent,x, y, sx, sy,sztring)
+Gorgi::Gorgi(int x, int y, int sx, int sy,string sztring):Widget(x, y, sx, sy,sztring)
 {
  ertek=0;
-
+//_parent->registerWidget(this);
 }
 
 
