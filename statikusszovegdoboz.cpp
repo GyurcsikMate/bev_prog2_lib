@@ -35,12 +35,13 @@ osszes.push_back(sor);
 
 void Szovi::draw()
 {
-    gout<<move_to(_x,_y)<<color(250,250,250)<<box(_size_x,_size_y);
-    for(int i=0;i<=osszes.size();i++)
+    gout<<move_to(_x,_y)<<color(250,250,250)<<box(_size_x,_size_y)<<move_to(_x,_y+gout.cascent()+2)<<color(100,100,0)<<text(szoveg);
+    /*for(int i=0;i<=osszes.size();i++)
     {
         gout<<move_to(_x,_y+i*gout.cascent()+2)<<text(osszes[i]);
 
     }
+*/
 }
     void Szovi::handle(int oldal)
     {

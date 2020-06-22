@@ -12,7 +12,7 @@ class Lista:public Widget
 {
     protected:
     vector<string>osszes;
-    int kie=0;
+    int kie;
 public:
     Lista(int , int, int , int ,string );
     void draw();

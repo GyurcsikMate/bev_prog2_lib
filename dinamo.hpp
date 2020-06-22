@@ -17,7 +17,7 @@ public:
     int ykereso();
     string kiekereso();
     void beolvaso(string fajl);
-
+    void hozzafuzo(string plusz);
 };
 
 #endif // DINAMO_HPP_INCLUDED

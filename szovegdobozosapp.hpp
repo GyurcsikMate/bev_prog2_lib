@@ -3,7 +3,9 @@
 #include "alkalkm.hpp"
 #include "gorgos.hpp"
 #include "muveletlista.hpp"
-
+#include "dobi.hpp"
+#include "statikusszovegdoboz.hpp"
+#include "dinamo.hpp"
 using namespace genv;
 class Szovegapp:public Application
 {

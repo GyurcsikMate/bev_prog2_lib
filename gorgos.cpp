@@ -19,7 +19,7 @@ Gorgi::Gorgi(int x, int y, int sx, int sy,string sztring):Widget(x, y, sx, sy,sz
 
 void Gorgi::draw()
 {
-    gout<<move_to(_x,_y)<<color(100,100,100)<<box(_size_x,_size_y)<<color(200,200,0)<<text(to_string(ertek));
+    gout<<move_to(_x,_y)<<color(100,100,100)<<box(_size_x,_size_y)<<color(200,200,0)<<move_to(_x,_y)<<text(to_string(ertek));
 
 }
     void Gorgi::handle(int oldal)

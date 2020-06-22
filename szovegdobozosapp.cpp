@@ -11,9 +11,11 @@ using namespace genv;
 
 Szovegapp::Szovegapp()
 {
-    //registerWidget(new Gorgi(this,10,10,40,20,"nemkell"));
+    registerWidget(new Doboz(40,10,10,0,"nemkell"));
     registerWidget(new Gorgi(10,10,10,10,"alma"));
     registerWidget(new Lista(100,100,100,100,"alma"));
+    registerWidget(new Szovi(50,30,50,40,"nemkell"));
+    registerWidget(new Dinamik(50,30,50,40,"nemkell"));
 
 }
 

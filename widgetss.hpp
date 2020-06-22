@@ -5,6 +5,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <functional>
 using namespace std;
 class Widget {
 protected:
